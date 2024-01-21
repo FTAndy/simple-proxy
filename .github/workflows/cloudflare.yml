@@ -5,10 +5,7 @@ name: Deploy Worker
 # secrets should also be made by CF
 
 on: 
-  push:
-    branches:
-      - main  # Trigger the action on commits to the main branch
-      - dev  # You can add or remove branches as needed
+  workflow_dispatch:
   repository_dispatch:
 
 jobs:
